@@ -1,0 +1,12 @@
+C:\Users\Nova\Desktop\C_Shap\Calculadora\Calculadora\bin\Debug\Calculadora.exe.config
+C:\Users\Nova\Desktop\C_Shap\Calculadora\Calculadora\bin\Debug\Calculadora.exe
+C:\Users\Nova\Desktop\C_Shap\Calculadora\Calculadora\bin\Debug\Calculadora.pdb
+C:\Users\Nova\Desktop\C_Shap\Calculadora\Calculadora\obj\Debug\Calculadora.csproj.AssemblyReference.cache
+C:\Users\Nova\Desktop\C_Shap\Calculadora\Calculadora\obj\Debug\Calculadora.csproj.SuggestedBindingRedirects.cache
+C:\Users\Nova\Desktop\C_Shap\Calculadora\Calculadora\obj\Debug\Calculadora.Form1.resources
+C:\Users\Nova\Desktop\C_Shap\Calculadora\Calculadora\obj\Debug\Calculadora.Properties.Resources.resources
+C:\Users\Nova\Desktop\C_Shap\Calculadora\Calculadora\obj\Debug\Calculadora.csproj.GenerateResource.cache
+C:\Users\Nova\Desktop\C_Shap\Calculadora\Calculadora\obj\Debug\Calculadora.csproj.CoreCompileInputs.cache
+C:\Users\Nova\Desktop\C_Shap\Calculadora\Calculadora\obj\Debug\Calculadora.exe
+C:\Users\Nova\Desktop\C_Shap\Calculadora\Calculadora\obj\Debug\Calculadora.pdb
+C:\Users\Nova\Desktop\C_Shap\Calculadora\Calculadora\obj\Debug\Calculadora.Form2.resources
