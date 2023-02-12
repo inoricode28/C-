@@ -1,0 +1,15 @@
+C:\Users\Nova\Desktop\C-Sharp\Ejercicios\FormExample\bin\Debug\net7.0\FormExample.exe
+C:\Users\Nova\Desktop\C-Sharp\Ejercicios\FormExample\bin\Debug\net7.0\FormExample.deps.json
+C:\Users\Nova\Desktop\C-Sharp\Ejercicios\FormExample\bin\Debug\net7.0\FormExample.runtimeconfig.json
+C:\Users\Nova\Desktop\C-Sharp\Ejercicios\FormExample\bin\Debug\net7.0\FormExample.dll
+C:\Users\Nova\Desktop\C-Sharp\Ejercicios\FormExample\bin\Debug\net7.0\FormExample.pdb
+C:\Users\Nova\Desktop\C-Sharp\Ejercicios\FormExample\obj\Debug\net7.0\FormExample.csproj.AssemblyReference.cache
+C:\Users\Nova\Desktop\C-Sharp\Ejercicios\FormExample\obj\Debug\net7.0\FormExample.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Nova\Desktop\C-Sharp\Ejercicios\FormExample\obj\Debug\net7.0\FormExample.AssemblyInfoInputs.cache
+C:\Users\Nova\Desktop\C-Sharp\Ejercicios\FormExample\obj\Debug\net7.0\FormExample.AssemblyInfo.cs
+C:\Users\Nova\Desktop\C-Sharp\Ejercicios\FormExample\obj\Debug\net7.0\FormExample.csproj.CoreCompileInputs.cache
+C:\Users\Nova\Desktop\C-Sharp\Ejercicios\FormExample\obj\Debug\net7.0\FormExample.dll
+C:\Users\Nova\Desktop\C-Sharp\Ejercicios\FormExample\obj\Debug\net7.0\refint\FormExample.dll
+C:\Users\Nova\Desktop\C-Sharp\Ejercicios\FormExample\obj\Debug\net7.0\FormExample.pdb
+C:\Users\Nova\Desktop\C-Sharp\Ejercicios\FormExample\obj\Debug\net7.0\FormExample.genruntimeconfig.cache
+C:\Users\Nova\Desktop\C-Sharp\Ejercicios\FormExample\obj\Debug\net7.0\ref\FormExample.dll

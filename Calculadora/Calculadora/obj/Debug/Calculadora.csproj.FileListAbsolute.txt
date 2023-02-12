@@ -10,3 +10,11 @@ C:\Users\Nova\Desktop\C_Shap\Calculadora\Calculadora\obj\Debug\Calculadora.cspro
 C:\Users\Nova\Desktop\C_Shap\Calculadora\Calculadora\obj\Debug\Calculadora.exe
 C:\Users\Nova\Desktop\C_Shap\Calculadora\Calculadora\obj\Debug\Calculadora.pdb
 C:\Users\Nova\Desktop\C_Shap\Calculadora\Calculadora\obj\Debug\Calculadora.Form2.resources
+C:\Users\Nova\Desktop\C-Sharp\Calculadora\Calculadora\obj\Debug\Calculadora.csprojAssemblyReference.cache
+C:\Users\Nova\Desktop\C-Sharp\Calculadora\Calculadora\obj\Debug\Calculadora.Form1.resources
+C:\Users\Nova\Desktop\C-Sharp\Calculadora\Calculadora\obj\Debug\Calculadora.Form2.resources
+C:\Users\Nova\Desktop\C-Sharp\Calculadora\Calculadora\obj\Debug\Calculadora.Properties.Resources.resources
+C:\Users\Nova\Desktop\C-Sharp\Calculadora\Calculadora\obj\Debug\Calculadora.csproj.GenerateResource.cache
+C:\Users\Nova\Desktop\C-Sharp\Calculadora\Calculadora\obj\Debug\Calculadora.csproj.CoreCompileInputs.cache
+C:\Users\Nova\Desktop\C-Sharp\Calculadora\Calculadora\obj\Debug\Calculadora.exe
+C:\Users\Nova\Desktop\C-Sharp\Calculadora\Calculadora\obj\Debug\Calculadora.pdb

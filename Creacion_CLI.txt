@@ -1,0 +1,32 @@
+Crear un formulario en CLI "Lineas de comando usando Dotnet"
+Sintaxis
+dotnet new winforms -o Holamundo
+
+Esto creara una carpeta llamado Holamundo, en el cual debemos ingresar.
+Una vez estado en la carpeta Holamundo, deberemos ejecutar el comando dotnet run,
+y debera mostrarse una ventana sin objetos en el.
+
+
+CSC "C Sharp Compiler"
+Para este manual lo que debemos hacer es primero buscar el compilador en nuestros ordenadores
+la ruta es la siguiente
+C:\Windows\Microsoft.NET\Framework\v4.0.30319
+lo que debemos hacer es crear una nuevo path en el entorno de variables de windows, buscar por intener.
+
+una vez configurado el entorno de variables debera aparecer el compilador en la terminal.
+
+En una terminal ejecutamos
+
+csc --version
+
+OK, ahora crearemos un archivo cs de las siglas de c sharp
+
+dotnet new console -n FormExample
+Esto lo creara con dotnet
+y se ejecuta con dotnet run.
+
+el otro metodo es solo con:
+touch app.cs
+esto creara un archivo c_sharp
+
+
