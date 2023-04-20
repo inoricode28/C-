@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="LoadTableCliente">
+        <s:complexType />
+      </s:element>
+      <s:element name="LoadTableClienteResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="LoadTableClienteResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="InsertClientes">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="idCliente" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="NombreCompañia" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="NombreContacto" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="CargoContacto" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Direccion" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Ciudad" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="region" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="codpostal" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pais" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="telefono" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="fax" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="InsertClientesResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="InsertClientesResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DeleteClientes">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="idCliente" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DeleteClientesResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="DeleteClientesResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateCliente">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="idCliente" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="NombreCompañia" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="NombreContacto" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="CargoContacto" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Direccion" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Ciudad" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="region" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="codpostal" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pais" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="telefono" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="fax" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateClienteResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="UpdateClienteResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ConsulCliente">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="idCliente" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ConsulClienteResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ConsulClienteResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="LoadTableClienteSoapIn">
+    <wsdl:part name="parameters" element="tns:LoadTableCliente" />
+  </wsdl:message>
+  <wsdl:message name="LoadTableClienteSoapOut">
+    <wsdl:part name="parameters" element="tns:LoadTableClienteResponse" />
+  </wsdl:message>
+  <wsdl:message name="InsertClientesSoapIn">
+    <wsdl:part name="parameters" element="tns:InsertClientes" />
+  </wsdl:message>
+  <wsdl:message name="InsertClientesSoapOut">
+    <wsdl:part name="parameters" element="tns:InsertClientesResponse" />
+  </wsdl:message>
+  <wsdl:message name="DeleteClientesSoapIn">
+    <wsdl:part name="parameters" element="tns:DeleteClientes" />
+  </wsdl:message>
+  <wsdl:message name="DeleteClientesSoapOut">
+    <wsdl:part name="parameters" element="tns:DeleteClientesResponse" />
+  </wsdl:message>
+  <wsdl:message name="UpdateClienteSoapIn">
+    <wsdl:part name="parameters" element="tns:UpdateCliente" />
+  </wsdl:message>
+  <wsdl:message name="UpdateClienteSoapOut">
+    <wsdl:part name="parameters" element="tns:UpdateClienteResponse" />
+  </wsdl:message>
+  <wsdl:message name="ConsulClienteSoapIn">
+    <wsdl:part name="parameters" element="tns:ConsulCliente" />
+  </wsdl:message>
+  <wsdl:message name="ConsulClienteSoapOut">
+    <wsdl:part name="parameters" element="tns:ConsulClienteResponse" />
+  </wsdl:message>
+  <wsdl:portType name="ControladorSoap">
+    <wsdl:operation name="LoadTableCliente">
+      <wsdl:input message="tns:LoadTableClienteSoapIn" />
+      <wsdl:output message="tns:LoadTableClienteSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertClientes">
+      <wsdl:input message="tns:InsertClientesSoapIn" />
+      <wsdl:output message="tns:InsertClientesSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteClientes">
+      <wsdl:input message="tns:DeleteClientesSoapIn" />
+      <wsdl:output message="tns:DeleteClientesSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateCliente">
+      <wsdl:input message="tns:UpdateClienteSoapIn" />
+      <wsdl:output message="tns:UpdateClienteSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ConsulCliente">
+      <wsdl:input message="tns:ConsulClienteSoapIn" />
+      <wsdl:output message="tns:ConsulClienteSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="ControladorSoap" type="tns:ControladorSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="LoadTableCliente">
+      <soap:operation soapAction="http://tempuri.org/LoadTableCliente" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertClientes">
+      <soap:operation soapAction="http://tempuri.org/InsertClientes" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteClientes">
+      <soap:operation soapAction="http://tempuri.org/DeleteClientes" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateCliente">
+      <soap:operation soapAction="http://tempuri.org/UpdateCliente" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ConsulCliente">
+      <soap:operation soapAction="http://tempuri.org/ConsulCliente" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="ControladorSoap12" type="tns:ControladorSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="LoadTableCliente">
+      <soap12:operation soapAction="http://tempuri.org/LoadTableCliente" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertClientes">
+      <soap12:operation soapAction="http://tempuri.org/InsertClientes" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteClientes">
+      <soap12:operation soapAction="http://tempuri.org/DeleteClientes" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateCliente">
+      <soap12:operation soapAction="http://tempuri.org/UpdateCliente" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ConsulCliente">
+      <soap12:operation soapAction="http://tempuri.org/ConsulCliente" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="Controlador">
+    <wsdl:port name="ControladorSoap" binding="tns:ControladorSoap">
+      <soap:address location="http://localhost:50474/Controlador.asmx" />
+    </wsdl:port>
+    <wsdl:port name="ControladorSoap12" binding="tns:ControladorSoap12">
+      <soap12:address location="http://localhost:50474/Controlador.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>
