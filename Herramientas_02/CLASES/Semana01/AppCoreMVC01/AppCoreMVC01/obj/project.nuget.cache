@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "dgSpecHash": "rWo93DPASJC17m/u4dOKMhrY/1/bOSZCDYJe7Hs6OgQm3KIdR0C+mmq3qBxAQ8ssEdlpu5gVCS4uWXHqMIgUXQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Nova\\Desktop\\Idat2\\HP2-IV.07-MARTES\\Semana01\\AppCoreMVC01\\AppCoreMVC01\\AppCoreMVC01.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Nova\\.nuget\\packages\\microsoft.extensions.apidescription.server\\3.0.0\\microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
+    "C:\\Users\\Nova\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
+    "C:\\Users\\Nova\\.nuget\\packages\\swashbuckle.aspnetcore\\5.6.3\\swashbuckle.aspnetcore.5.6.3.nupkg.sha512",
+    "C:\\Users\\Nova\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\5.6.3\\swashbuckle.aspnetcore.swagger.5.6.3.nupkg.sha512",
+    "C:\\Users\\Nova\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\5.6.3\\swashbuckle.aspnetcore.swaggergen.5.6.3.nupkg.sha512",
+    "C:\\Users\\Nova\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\5.6.3\\swashbuckle.aspnetcore.swaggerui.5.6.3.nupkg.sha512"
+  ],
+  "logs": []
+}

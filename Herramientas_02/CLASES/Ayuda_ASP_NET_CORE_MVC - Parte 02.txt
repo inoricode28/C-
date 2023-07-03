@@ -1,0 +1,53 @@
+-- Parte 02
+
+-- 2.1
+-- crear la cadena de conexión en el archivo "appsettings.json"
+
+{
+  "ConnectionStrings": {
+    "cn1": "server=JULIODELL;database=BDTRANSITO22;integrated security=true;" 
+  },
+  "Logging": {
+....
+}
+
+-- 2.2
+-- Luego debemos registrar el contexto como un servicio en el archivo "startup.cs"
+-- pero primero importaremos las siguientes librerias
+
+using ProyectoAspNetCoreMVC.Models;
+using Microsoft.EntityFrameworkCore;
+
+
+-- luego dentro del método ConfigureServices y debajo de services.AddMvc(...); agregaremos
+
+public void ConfigureServices(IServiceCollection services){
+
+   ....
+   services.AddMvc(.....);
+
+   string conexion = Configuration.GetConnectionString("cn1");
+
+   services.AddDbContext<BDTRANSITO22Context>(options => options.UseSqlServer(conexion));
+}
+
+-- 2.3
+Luego en el controlador, primero importaremos las librerias:
+
+using ProyectoAspNetCoreMVC.Models; // Contexto del EF
+using Microsoft.EntityFrameworkCore;
+using Microsoft.AspNetCore.Mvc.Rendering; // SelectList
+
+definimos una variable de sólo lectura sobre el EntityFrameworkCore
+
+private readonly BDTRANSITO22Context bd;
+
+
+Y creamos un constructor que reciba el EntityFrameworkCore y lo asignamos
+
+public ConsultasController(BDTRANSITO22Context _contexto)
+{
+   bd = _contexto;
+}
+
+Ahora ya podemos utilizar en cualquier ActionResult la variable del contexto del EntityFrameworkCore

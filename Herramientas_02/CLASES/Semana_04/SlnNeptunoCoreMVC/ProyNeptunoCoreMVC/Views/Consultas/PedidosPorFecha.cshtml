@@ -1,0 +1,82 @@
+﻿@model IEnumerable<ProyNeptunoCoreMVC.Models.Pedido>
+
+@{
+    ViewData["Title"] = "PedidosPorFecha";
+}
+
+<h1>PedidosPorFecha</h1>
+
+<!-- formulario MVC -->
+@using (Html.BeginForm())
+{
+    <div>
+        A partir de la Fecha del Pedido: @Html.TextBox("fecha")
+        <br/>
+        <button class="btn btn-success">Consultar</button>
+    </div>    
+}
+
+<br/>
+<div class="alert alert-success">
+    Cantidad de Pedidos: @ViewBag.contador <br/>
+    Suma de los Cargos : @ViewBag.suma
+</div>
+<br/>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.IdPedido)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.FechaPedido)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Cargo)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Eliminado)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.IdClienteNavigation.NombreCliente)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.IdEmpleadoNavigation.Apellidos)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.IdPedido)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.FechaPedido)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Cargo)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Eliminado)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.IdClienteNavigation.NombreCliente)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.IdEmpleadoNavigation.Apellidos)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.IdPedido">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.IdPedido">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.IdPedido">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
